@@ -1,0 +1,18 @@
+<ion-view title="Signup" id="page11" class=" ">
+    <ion-content padding="true" class="has-header" ng-controller="signupCtrl">
+        <form id="signup-form1" class="list " method="post" data-ng-submit="signup()">
+            <ion-list id="signup-list1" class=" ">
+                <label class="item item-input " id="signup-input1">
+                    <span class="input-label">Email</span>
+                    <input name="email" type="email" ng-model="email" placeholder="">
+                </label>
+                <label class="item item-input " id="signup-input3">
+                    <span class="input-label">Password</span>
+                    <input name="password" ng-model="password" type="password" placeholder="">
+                </label>
+            </ion-list>
+            <button id="signup-button1" class=" button button-stable  button-block ">Sign up</button>
+            <a ui-sref="login" id="login-button3" class=" button button-positive  button-block button-clear ">Or Login</a>
+        </form>
+    </ion-content>
+</ion-view>

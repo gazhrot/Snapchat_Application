@@ -1,0 +1,18 @@
+<ion-view title="Snapchat Accueil" id="page14" class=" ">
+    <ion-content padding="true" class="has-header" ng-controller="photoCtrl">
+        <div style="position:relative;overflow:hidden;padding-bottom:26.25%;height:0;" id="cameraTabDefaultPage-video1" class=" ">
+        </div>
+            <button class=" button button-stable  button-block " ng-click="takePicture()">Snapper</button>
+        <form enctype="multipart/form-data" id="snapForm">
+	        <label class="item item-input ">
+	        	<span class="input-label">Temps</span>
+	        	<input type="number" ng-model="time" >
+	        </label>
+	        <label class="item item-input ">
+	        	<span class="input-label">ID du contact</span>
+	        	<input type="number" ng-model="contact" >
+	        </label>
+	    </form>
+        <button class="button button-stable  button-block" ng-click="update()">Envoyer</button>
+    </ion-content>
+</ion-view>

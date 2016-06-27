@@ -1,0 +1,14 @@
+<ion-view title="Mes Snap" id="page15" class=" ">
+    <ion-content padding="true" class="has-header" ng-controller="snapCtrl" ng-init="getSnap()">
+    	<button class="button button-stable  button-block" ng-click="getSnap()">recup les snap</button>
+    	<button class="button button-stable  button-block" ng-click="getAllUser()">voir tout les utilisateur</button>
+    	<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="snap in snaps" type="item-text-wrap" href="#/tab/snap/{{snap.id_snap}}">
+
+	    	<img style="background-color:red;">
+	    	<h2>{{snap.id_sender}}</h2>
+	    	<p>Le snap na pas encore ete vue !</p>
+	    	<i class="icon ion-chevron-right icon-accessory"></i>
+
+    	</ion-item>
+    </ion-content>
+</ion-view>
